@@ -71,6 +71,12 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     @Override
+    public String getCurrentUser() {
+        // Not implemented for this assignment
+        return null;
+    }
+
+    @Override
     public boolean existsByName(String username) {
         final OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
